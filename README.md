@@ -5,7 +5,7 @@ Learn the basics:
 
 * [Setting up](#settingup)
 * [Syntax](#syntax)
-* [Debugging](#debugging)Debugging
+* [Debugging](#debugging)
 
 
 # <a name="settingup"></a>Setting Up
@@ -18,27 +18,28 @@ Learn the basics:
 
   Then you can create and add another file for creating your shortcuts (combinators) and listen for them. By creating a separate document you simple save yourself hassle of debugging your own mistakes.
 
-    <script>
-      commands.register("ctrl+x",{
-        title:"Overwrite",
-        exec:function(sequence) {
-          //this = e of keydown event
-          sequence("b",function(e){
-            //e is the e of keydown event here
-            //this is the object commands.cmd["ctrl+x"];
-            console.log("Hello World");
-          },document);
-        },
-        repeat: true,
-        input: true,
-        once: false,
-        ignoreClass: false
-      });
-      
-      //start the commands listener
-      commands.listen();
-    </script>
+```javascript
+<script>
+  commands.register("ctrl+x",{
+    title:"Overwrite",
+    exec:function(sequence) {
+      //this = e of keydown event
+      sequence("b",function(e){
+        //e is the e of keydown event here
+        //this is the object commands.cmd["ctrl+x"];
+        console.log("Hello World");
+      },document);
+    },
+    repeat: true,
+    input: true,
+    once: false,
+    ignoreClass: false
+  });
   
+  //start the commands listener
+  commands.listen();
+</script>
+```
   
 # <a name="syntax"></a>Syntax
 
@@ -53,7 +54,9 @@ Learn the basics:
 
 
 #<a name="register_syntax">Register</a>
-`combinator.register(keys,options);`
+```js
+combinator.register(keys,options);
+```
 
 **keys** is a pattern of keys to match against for example <kbd>ctrl</kbd>+<kbd>x</kbd> and must be a string format.
 **options** there are a set of options you must know to understand combinator.
@@ -69,18 +72,23 @@ Learn the basics:
 
 
 #<a name="listen_syntax">Listen</a>
-    combinator.listen()
+```js
+combinator.listen()
+```
 listen takes no arguments
 
 
 #<a name="release_syntax">Release</a>
-    combinator.release(keys);
+```js
+combinator.release(keys);
+```
 
 You **MUST** release a combinator set if you plan on overwriting it, we don't allow overwrites because this helps incase you forget some of your combinator sets.
 
 #<a name="record_syntax">Record</a>
-   combinator.record(function[,target]);
-
+```js
+combinator.record(function[,target]);
+```
 #<a name="fetch_syntax">fetch</a>
     combinator.fetch(keys);
 Just like `register` this must be a pattern of keys to match against in string format, and must exists as a combinator set.
