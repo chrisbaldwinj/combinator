@@ -132,9 +132,9 @@ This would be when you press <kbd>ctrl</kbd>+<kbd>b</kbd> in the document area a
 
 <a name="listen_syntax">Listen</a>
 ```js
-combinator.listen()
+combinator.listen(target)
 ```
-listen takes no arguments
+listen takes one argument, this is the target element you want to listen to. Default is `document`
 
 
 <a name="release_syntax">Release</a>
@@ -148,6 +148,24 @@ You **MUST** release a combinator set if you plan on overwriting it, we don't al
 ```js
 combinator.record(function[,target]);
 ```
+
+Record is best used by caching the action in a variable, it returns an object so you can stop listening later on.
+
+**Example**
+
+```js
+  var recorder = combinator.record(function(keyLiteral, event){
+    console.log(keyLiteral); //Enter
+    console.log(event.which); // 13
+  });
+  recorder.stop();
+```
+
+`keyLiteral` is the literal translation in english of the key pressed. Some keys may be confusing such as the numerical keys, they will only return 0-9 and not it's alternative key i.e <kbd>!@#$%^&*()</kbd> 
+
+`event` is the event object returned on the keydown event. 
+
+
 <a name="fetch_syntax">fetch</a>
     combinator.fetch(keys);
 Just like `register` this must be a pattern of keys to match against in string format, and must exists as a combinator set.
