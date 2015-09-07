@@ -15,17 +15,17 @@ Combinator is a small javascript library for application shortcuts. Combinator w
 
 ####[Latest Changes](#lc)
 
-*[Change Log](#changelog)
+*[Change Log](#changelogger)
 
 ***
 
-####[Downloads](#downloads)
+####[Downloads](#download)
 
-* [Latest Version](#latestver)
+* [Latest Version](/combinator.js)
 
 ***
 
-####[Support](#support)
+####[Support](#supportlink)
 
 ***
 
@@ -201,13 +201,15 @@ This turns debugging messages on through out the code helping you incase somethi
 * Added record functionality for ease of access to the user.
 * Fixed minor issues.
 
+####<a name="changelogger">Change Log</a>
+
 ***
 
-#<a name="downloads">Downloads</a>
+#<a name="download">Downloads</a>
 * [Latest Unminified](/combinator.js)
 * [Latest Unminified Debug](/blob/master/combinator.js)
 * [Latest Minified](/blob/master/combinator.js)
 * [Latest Minified Debug](/blob/master/combinator.js)
 
 
-#<a name="support">Support</a>
+#<a name="supportlink">Support</a>
