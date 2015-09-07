@@ -57,7 +57,7 @@ Combinator is a small javascript library for application shortcuts. Combinator w
     repeat: true,
     input: true,
     once: false,
-    ignoreClass: false
+    ignoreClass: null
   });
   
   //start the commands listener
