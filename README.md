@@ -9,20 +9,23 @@ Combinator is a small javascript library for application shortcuts. Combinator w
 * [Setting up](#settingup)
 * [Syntax](#syntax)
 * [Debugging](#debugging)
-****
+
+***
 
 
 ####[Latest Changes](#lc)
 *[Change Log](#changelog)
-****
+
+***
 
 ####[Downloads](#downloads)
 * [Latest Version](#latestver)
-****
+
+***
 
 ####[Support](#support)
 
-
+***
 
 #<a name="ltb">Learning The Basics</a>
 
@@ -196,13 +199,13 @@ This turns debugging messages on through out the code helping you incase somethi
 * Added record functionality for ease of access to the user.
 * Fixed minor issues.
 
-****
+***
 
 #<a name="downloads">Downloads</a>
-* [Latest Unminified](#/blob/master/combinator.js)
-* [Latest Unminified Debug](#/blob/master/combinator.js)
-* [Latest Minified](#/blob/master/combinator.js)
-* [Latest Minified Debug](#/blob/master/combinator.js)
+* [Latest Unminified](/blob/master/combinator.js)
+* [Latest Unminified Debug](/blob/master/combinator.js)
+* [Latest Minified](/blob/master/combinator.js)
+* [Latest Minified Debug](/blob/master/combinator.js)
 
 
 #<a name="support">Support</a>
