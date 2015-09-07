@@ -14,11 +14,13 @@ Combinator is a small javascript library for application shortcuts. Combinator w
 
 
 ####[Latest Changes](#lc)
+
 *[Change Log](#changelog)
 
 ***
 
 ####[Downloads](#downloads)
+
 * [Latest Version](#latestver)
 
 ***
@@ -202,7 +204,7 @@ This turns debugging messages on through out the code helping you incase somethi
 ***
 
 #<a name="downloads">Downloads</a>
-* [Latest Unminified](/blob/master/combinator.js)
+* [Latest Unminified](/combinator.js)
 * [Latest Unminified Debug](/blob/master/combinator.js)
 * [Latest Minified](/blob/master/combinator.js)
 * [Latest Minified Debug](/blob/master/combinator.js)
