@@ -15,7 +15,7 @@ Combinator is a small javascript library for application shortcuts. Combinator w
 
 ####[Latest Changes](#lc)
 
-*[Change Log](#changelogger)
+* [Change Log](#changelogger)
 
 ***
 
